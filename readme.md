@@ -1,3 +1,5 @@
-# Task one
+# FE08-onl-Lepnyakov-Sergei homeworks
 
-## Create FE08-wk-1-Lepnyakov-Sergei repository
+### Task one is done and checked
+
+### Task two is done
