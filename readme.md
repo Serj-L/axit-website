@@ -2,4 +2,6 @@
 
 ### Task one is done and checked
 
-### Task two is done
+### Task two is done and checked (bugs fixed)
+
+### Task three is done
