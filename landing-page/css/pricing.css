@@ -36,8 +36,8 @@
 }
 
 .plans__item {
-  flex-basis: 30%;
-  display: inline-block;
+  flex-basis: 29%;
+  display: block;
 }
 
 .plans__tarif,
