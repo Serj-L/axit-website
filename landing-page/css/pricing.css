@@ -64,10 +64,12 @@
   text-align: center;
   padding: 14px 0 17px;
   margin-top: 2px;
+  transition: 0.2s;
 }
-.plans__advantage--active {
+.plans__advantage:hover {
   background-color: #d98943;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .plans__text {
