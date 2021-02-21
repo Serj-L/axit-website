@@ -23,13 +23,14 @@
 .plans {
   display: flex;
   justify-content: center;
-  justify-items: center;
-  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
   margin: 12px -15px 0;
 }
 
 .plans__item {
-  width: 350px;
+  flex-grow: 1;
+  max-width: 350px;
   margin: 40px 15px 0;
 }
 
@@ -73,19 +74,18 @@
 }
 
 /* adaptive */
-@media (max-width: 768px) {
+@media (max-width: 777px) {
   .plans {
     flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
   }
+
   .plans__item {
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
 }
-@media (max-width: 368px) {
-  .plans,
-  .plans__item {
-    width: 100%;
-  }
-}
+
 /* /adaptive */

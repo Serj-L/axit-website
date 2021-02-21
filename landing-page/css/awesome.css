@@ -51,10 +51,11 @@
 }
 
 /* adaptive */
-@media (max-width: 768px) {
+@media (max-width: 777px) {
   .advantages {
     flex-direction: column;
   }
+  .advantages,
   .advantages__item {
     margin-left: 0;
     margin-right: 0;
