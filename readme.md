@@ -2,6 +2,6 @@
 
 ### Task one is done and checked
 
-### Task two is done and checked (bugs fixed)
+### Task two (landing page Section "Awesome") is done and checked (bugs fixed)
 
-### Task three is done
+### Task three (landing page Section 2 "Pricing") is done and checked (bugs fixed)
