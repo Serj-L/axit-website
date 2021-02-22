@@ -21,9 +21,6 @@
 }
 
 .plans {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   margin: 12px -15px 0;
 }
@@ -34,13 +31,13 @@
   margin: 40px 15px 0;
 }
 
-.plans__tarif,
+.plans__title,
 .plans__price,
 .plans__advantage {
   color: #ffffff;
   background-color: #333333;
 }
-.plans__tarif {
+.plans__title {
   padding: 15px 0 8px;
 }
 
@@ -60,7 +57,8 @@
   margin-top: 2px;
   transition: 0.2s;
 }
-.plans__advantage:hover {
+.plans__advantage:hover,
+.plans__advantage:focus {
   background-color: #d98943;
   font-weight: 800;
   cursor: pointer;
