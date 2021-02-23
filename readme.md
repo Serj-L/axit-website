@@ -5,3 +5,5 @@
 ### Task two (Landing page Section "Awesome") is done and checked (bugs fixed)
 
 ### Task three (Landing page Section "Pricing") is done and checked (bugs fixed)
+
+### Task three (Landing page Section's "Customers" and "Axure") is done
