@@ -1,6 +1,7 @@
 @import url("../css/awesome.css");
 @import url("../css/pricing.css");
 @import url("../css/customers.css");
+@import url("../css/axure.css");
 
 * {
   margin: 0;
@@ -18,6 +19,8 @@
   max-width: 1170px;
   margin: auto;
   padding: 0 15px;
+  position: relative;
+  z-index: 2;
 }
 
 .wrapper_flex-row {
@@ -49,7 +52,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
-
   text-align: center;
 }
 
@@ -60,3 +62,71 @@
   line-height: 27px;
   text-align: center;
 }
+/* ringer */
+.ringerBtn {
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #86878b;
+  border-radius: 50%;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  outline: none;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.ringerBtn:hover,
+.ringerBtn:focus {
+  box-shadow: 0px 0px 18px #a9aaaf;
+}
+
+.ringerBtn:hover::before,
+.ringerBtn:focus::before {
+  content: "Call us to learn more!";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -50px;
+  left: -100px;
+  width: 150px;
+  height: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #86878b;
+  border-radius: 5px;
+}
+
+.ringerBtn:hover::after,
+.ringerBtn:focus::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 11px solid #86878b;
+}
+
+.ringerBtn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  transform: rotate(-138deg);
+  transition: 0.3s;
+}
+
+.ringerBtn i:hover {
+  transform: rotate(-30deg);
+}
+/* /ringer */

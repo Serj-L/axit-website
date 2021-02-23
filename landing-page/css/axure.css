@@ -1,0 +1,61 @@
+.axure {
+  padding: 57px 0 38px;
+  color: #ffffff;
+  background: url("../img/background1.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.axure::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.axure__title:after {
+  display: block;
+  margin: 25px auto 0;
+  width: 64px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.8);
+  content: "";
+}
+
+.axure__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 34px;
+}
+
+.axure__btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 42px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-top: 57px;
+  transition: 0.2s;
+}
+
+.axure__btn a:hover,
+.axure__btn a:focus {
+  background-color: #86878b;
+  border-color: #86878b;
+  border-radius: 2px;
+  transform: scale(1.1);
+}
