@@ -12,14 +12,11 @@
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 1170px;
   margin: auto;
   padding: 0 15px;
   position: relative;
+  text-align: center;
   z-index: 2;
 }
 

@@ -36,24 +36,22 @@
   margin-top: 34px;
 }
 
-.axure__btn a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.axure__btn {
+  display: block;
   width: 135px;
-  height: 42px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
   color: #ffffff;
+  padding: 11px 0;
+  margin: 57px auto 0;
   border: 1px solid #ffffff;
-  margin-top: 57px;
   transition: 0.2s;
 }
 
-.axure__btn a:hover,
-.axure__btn a:focus {
+.axure__btn:hover,
+.axure__btn:focus {
   background-color: #86878b;
   border-color: #86878b;
   border-radius: 2px;
