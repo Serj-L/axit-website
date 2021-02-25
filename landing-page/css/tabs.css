@@ -1,0 +1,138 @@
+.tabs {
+  padding: 125px 0;
+}
+
+.tabs__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tabs__itemTitle {
+  width: 110px;
+  padding: 43px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #ffffff;
+  white-space: nowrap;
+  background-color: #333333;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.tabs__itemTitle:nth-child(odd):hover,
+.tabs__itemTitle:nth-child(odd):focus {
+  transform: translateX(-10px);
+  background-color: var(--clr-primary);
+}
+
+.tabs__itemTitle:nth-child(even):hover,
+.tabs__itemTitle:nth-child(even):focus {
+  transform: translateX(15px);
+  background-color: #86878b;
+}
+
+.tabs__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 570px;
+  margin-left: 20px;
+}
+
+.tabs__title {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tabs__text {
+  color: #86878b;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tabs__content :nth-child(2) {
+  margin-top: 60px;
+}
+.tabs__content :nth-child(3) {
+  margin-top: 25px;
+}
+
+.tabs__btn {
+  background-color: #666666;
+  margin-top: 90px;
+}
+
+.tabs__btn:hover,
+.tabs__btn:focus {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+  border-radius: 2px;
+  transform: scale(1.1);
+}
+
+.tabs__img {
+  margin-left: 20px;
+  transition: 0.3s;
+  transform-origin: left top;
+}
+
+.tabs__img:hover {
+  transform: rotate(10deg);
+}
+
+/* adaptive */
+@media (max-width: 992px) {
+  .tabs .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs {
+    padding: 50px 50px;
+  }
+
+  .tabs__items {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .tabs__items h3:not(:first-child) {
+    margin-left: 15px;
+  }
+  .tabs__itemTitle:nth-child(odd):hover,
+  .tabs__itemTitle:nth-child(odd):focus {
+    transform: translateY(-10px);
+  }
+
+  .tabs__itemTitle:nth-child(even):hover,
+  .tabs__itemTitle:nth-child(even):focus {
+    transform: translateY(-15px);
+  }
+
+  .tabs__content {
+    align-items: center;
+    margin-top: 30px;
+  }
+  .tabs__content :nth-child(2) {
+    margin-top: 20px;
+  }
+  .tabs__content :nth-child(3) {
+    margin-top: 15px;
+  }
+  .tabs__title,
+  .tabs__text {
+    text-align: center;
+  }
+
+  .tabs__btn {
+    margin-top: 40px;
+  }
+
+  .tabs__img {
+    margin-top: 30px;
+  }
+}
+/* /adaptive */

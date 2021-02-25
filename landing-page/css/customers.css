@@ -14,6 +14,7 @@
 .customers__text {
   margin-top: 30px;
   color: #86878b;
+  text-align: center;
 }
 
 .testimonials {
@@ -27,6 +28,7 @@
 }
 .testimonials__text {
   color: #86878b;
+  text-align: center;
   background-color: #e2e2e2;
   border-radius: 7px;
   padding: 7px 23px;
@@ -75,6 +77,10 @@
 
 /* adaptive */
 @media (max-width: 777px) {
+  .customers {
+    padding: 50px 50px;
+  }
+
   .testimonials {
     flex-direction: column;
   }

@@ -1,0 +1,99 @@
+.contactUs {
+  padding: 80px 0 55px;
+}
+
+.contactUs__title:after {
+  display: block;
+  margin: 25px auto 0;
+  width: 64px;
+  height: 1px;
+  background: #e72424;
+  content: "";
+}
+
+.contactUs__text {
+  margin-top: 30px;
+  color: #86878b;
+  text-align: center;
+}
+
+.contactUs__form {
+  margin-top: 95px;
+}
+
+.contactForm-inputs-wrapper,
+.contactForm-textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactForm-inputs-wrapper {
+  justify-content: space-between;
+  position: relative;
+}
+
+.contactForm-textarea-wrapper {
+  margin-left: 40px;
+}
+textarea {
+  resize: none;
+}
+
+/* hidden password */
+.password-control-message {
+  position: absolute;
+  bottom: 4%;
+  right: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/eye-slash-regular.svg") 0 0 no-repeat;
+}
+.password-control-message.view {
+  background: url("../img/eye-regular.svg") 0 0 no-repeat;
+}
+/* /hidden password */
+
+.contactForm-btn {
+  margin: 70px auto 0;
+  background-color: #666666;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contactForm-btn:hover,
+.contactForm-btn:focus {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+  border-radius: 2px;
+  transform: scale(1.1);
+}
+
+/* adaptive */
+@media (max-width: 777px) {
+  .contactUs {
+    padding: 40px 0 40px;
+  }
+
+  .contactUs .contactUs__form {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .contactForm-inputs-wrapper label:not(:first-child) {
+    margin-top: 15px;
+  }
+  .contactForm-textarea-wrapper {
+    margin: 15px 0 0;
+  }
+
+  .advantages,
+  .advantages__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .advantages__item:not(:first-child) {
+    margin: 35px 0 0;
+  }
+}
+/* /adaptive */
