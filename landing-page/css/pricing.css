@@ -31,7 +31,6 @@
 }
 
 .plans__item:hover {
-  cursor: pointer;
   transform: translateY(-15px);
 }
 
@@ -94,5 +93,4 @@
     margin-right: 0;
   }
 }
-
 /* /adaptive */

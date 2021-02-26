@@ -4,9 +4,12 @@ footer {
   color: #ffffff;
 }
 
-.footer__socialsNav {
+.footer__socialsList {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .footer__socialsNav ul:not(:first-child) {
@@ -28,10 +31,19 @@ footer {
 }
 
 .footer__copyright {
+  display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 18px;
+  margin-top: 10px;
 }
+
+/* adaptive */
+@media (max-width: 450px) {
+  .footer__socialsList {
+    width: 70%;
+  }
+}
+/* /adaptive */

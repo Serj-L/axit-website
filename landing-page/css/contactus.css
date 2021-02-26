@@ -50,24 +50,14 @@ textarea {
   height: 20px;
   background: url("../img/eye-slash-regular.svg") 0 0 no-repeat;
 }
+
 .password-control-message.view {
   background: url("../img/eye-regular.svg") 0 0 no-repeat;
 }
 /* /hidden password */
 
-.contactForm-btn {
+.contactUs button {
   margin: 70px auto 0;
-  background-color: #666666;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.contactForm-btn:hover,
-.contactForm-btn:focus {
-  background-color: var(--clr-primary);
-  border-color: var(--clr-primary);
-  border-radius: 2px;
-  transform: scale(1.1);
 }
 
 /* adaptive */

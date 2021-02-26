@@ -60,17 +60,8 @@
   margin-top: 25px;
 }
 
-.tabs__btn {
-  background-color: #666666;
+.tabs__content .secondary-btn {
   margin-top: 90px;
-}
-
-.tabs__btn:hover,
-.tabs__btn:focus {
-  background-color: var(--clr-primary);
-  border-color: var(--clr-primary);
-  border-radius: 2px;
-  transform: scale(1.1);
 }
 
 .tabs__img {
@@ -114,7 +105,7 @@
 
   .tabs__content {
     align-items: center;
-    margin-top: 30px;
+    margin: 30px 0 0;
   }
   .tabs__content :nth-child(2) {
     margin-top: 20px;
@@ -127,12 +118,12 @@
     text-align: center;
   }
 
-  .tabs__btn {
+  .tabs__content .secondary-btn {
     margin-top: 40px;
   }
 
   .tabs__img {
-    margin-top: 30px;
+    margin: 30px 0 0;
   }
 }
 /* /adaptive */

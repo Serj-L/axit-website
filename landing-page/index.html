@@ -7,6 +7,7 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f48a34059e.js" crossorigin="anonymous"></script>
@@ -14,7 +15,7 @@
 <body>
 <!-- ringer button-->
     <div class="ringer">
-        <a href="#" class=ringerBtn><i class="fas fa-phone"></i></a>
+        <div class="ringerBtn"><i class="fas fa-phone"></i></div>
     </div>
 <!-- ringer button-->
 <!-- header -->
@@ -45,20 +46,20 @@
                     <p class="hero__description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aenean
                     </p>
-                    <a href="#" class="hero__btn downloadBtn">Download</a>
+                    <a href="#" class="primary-btn">Download</a>
                 </div>
-                <form id="auth-form" action="#" name="auth-form" method="POST" class="hero__form">
+                <form class="hero__form" id="auth-form" action="#" name="auth-form" method="POST">
                     <h3 class="form-title subtitle">Try Your <span class="text color">FREE</span> Trial Today</h3>
                     <div class="authForm-inputs-wrapper">
-                        <label for="userName-input" class="input-label description">Name</label>
+                        <label class="input-label description" for="userName-input">Name</label>
                         <input class="form-input description" id="userName-input" type="text" form="auth-form" name="userName-authForm" required>
-                        <label for="userEmail-input" class="input-label description">Email</label>
+                        <label class="input-label description"for="userEmail-input">Email</label>
                         <input class="form-input description" id="userEmail-input" type="email" form="auth-form" name="userEmail-authForm" required>
-                        <label for="userPassword-input" class="input-label password description">Password</label>
+                        <label class="input-label description" for="userPassword-input">Password</label>
                         <input class="form-input description" id="userPassword-input" type="password" form="auth-form" name="userPassword-authForm" required>
                         <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
                     </div>
-                    <button class="getStarted-btn" type="submit" form-="auth-form">Get Started</button>
+                    <button class="getStarted-btn" type="submit" form="auth-form">Get Started</button>
                 </form>
             </div>
         </section>
@@ -71,37 +72,25 @@
                     </p>
                 </div>
                 <nav class="socials__headerNav">
-                    <ul class="socialsHeader-list">
+                    <ul class="socials__headerList">
                         <li class="social-icon">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </li>
-                    </ul>
-                    <ul class="socials-list">
                         <li class="social-icon">
                             <a href="#"><i class="fab fa-twitter"></i></a>
                         </li>
-                    </ul>
-                    <ul class="socials-list">
                         <li class="social-icon">
                             <a href="#"><i class="fab fa-google-plus-g"></i></a>
                         </li>
-                    </ul>
-                    <ul class="socials-list">
                         <li class="social-icon">
                             <a href="#"><i class="fab fa-pinterest"></i></a>
                         </li>
-                    </ul>
-                    <ul class="socials-list">
                         <li class="social-icon">
                             <a href="#"><i class="fab fa-instagram-square"></i></a>
                         </li>
-                    </ul>
-                    <ul class="socials-list">
                         <li class="social-icon">
                             <a href="#"><i class="fab fa-stumbleupon"></i></a>
                         </li>
-                    </ul>
-                    <ul class="socials-list">
                         <li class="social-icon">
                             <a href="#"><i class="fas fa-rss"></i></a>
                         </li>
@@ -127,10 +116,10 @@
                 <p class="tabs__text description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                 </p>
-                <a href="#" class="tabs__btn downloadBtn">Download</a>
+                <a href="#" class="secondary-btn">Download</a>
             </div>
             <div class="tabs__img">
-            <img src="/img/city-img.png" alt="City">
+            <img src="../img/city-img.png" alt="City">
         </div>
     </section>
 <!-- /tabs -->
@@ -305,7 +294,7 @@
                     Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!
                 </p>
             </div>
-            <a href="#" class="axure__btn downloadBtn">Download</a>
+            <a href="#" class="primary-btn">Download</a>
         </div>
     </section>
 <!-- /axure -->
@@ -318,22 +307,22 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
         </div>
-        <form id="contact-form" action="#" name="contact-form" method="POST" class="contactUs__form wrapper_flex-row_items-bottom">
+        <form class="contactUs__form wrapper_flex-row_items-bottom" id="contact-form" action="#" name="contact-form" method="POST">
             <div class="contactForm-inputs-wrapper">
-                <label for="userName-contactInput" class="input-label description">Name</label>
+                <label class="input-label description" for="userName-contactInput">Name</label>
                 <input class="form-input description" id="userName-contactInput" type="text" form="contact-form" name="userName-contactForm" required>
-                <label for="userEmail-contactInput" class="input-label description">Email</label>
+                <label class="input-label description" for="userEmail-contactInput">Email</label>
                 <input class="form-input description" id="userEmail-contactInput" type="email" form="contact-form" name="userEmail-contactForm" required>
-                <label for="userPassword-contactInput" class="input-label description">Password</label>
+                <label class="input-label description" for="userPassword-contactInput">Password</label>
                 <input class="form-input description" id="userPassword-contactInput" type="password" form="contact-form" name="userPassword-contactForm" required>
                 <a href="#" class="password-control-message" onclick="return show_hide_password_contact(this);"></a>
             </div>
             <div class="contactForm-textarea-wrapper">
-                <label for="userMessage-input" class="input-label description">Message</label>
+                <label class="input-label description" for="userMessage-input">Message</label>
                 <textarea class="form-input" id="userMessage-input" form="contact-form" name="userMessage" rows="11" required></textarea>
             </div>
         </form>
-        <button class="contactForm-btn downloadBtn" type="submit" form="contact-form">Send Message</button>
+        <button class="secondary-btn" type="submit" form="contact-form">Send Message</button>
     </div>
 </section>
 <!-- /contat us -->
@@ -341,37 +330,25 @@
     <footer class="footer">
         <div class="container">
             <nav class="footer__socialsNav">
-                <ul class="socialsFooter-list">
+                <ul class="footer__socialsList">
                     <li class="social-icon">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                     </li>
-                </ul>
-                <ul class="socials-list">
                     <li class="social-icon">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
-                </ul>
-                <ul class="socials-list">
                     <li class="social-icon">
                         <a href="#"><i class="fab fa-google-plus-g"></i></a>
                     </li>
-                </ul>
-                <ul class="socials-list">
                     <li class="social-icon">
                         <a href="#"><i class="fab fa-pinterest"></i></a>
                     </li>
-                </ul>
-                <ul class="socials-list">
                     <li class="social-icon">
                         <a href="#"><i class="fab fa-instagram-square"></i></a>
                     </li>
-                </ul>
-                <ul class="socials-list">
                     <li class="social-icon">
                         <a href="#"><i class="fab fa-stumbleupon"></i></a>
                     </li>
-                </ul>
-                <ul class="socials-list">
                     <li class="social-icon">
                         <a href="#"><i class="fas fa-rss"></i></a>
                     </li>

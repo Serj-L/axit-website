@@ -118,15 +118,9 @@
   color: rgba(255, 255, 255, 0.45);
   margin-top: 32px;
 }
-.hero__btn {
+
+.hero__content .primary-btn {
   margin-top: 50px;
-}
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: var(--clr-primary);
-  border-color: var(--clr-primary);
-  border-radius: 2px;
-  transform: scale(1.1);
 }
 
 .hero__form {
@@ -174,6 +168,14 @@
   transition: 0.2s;
 }
 
+.getStarted-btn:hover,
+.getStarted-btn:focus {
+  background-color: var(--clr-primary);
+  cursor: pointer;
+  border-color: var(--clr-primary);
+  color: #ffffff;
+}
+
 /* hidden password */
 .password-control {
   position: absolute;
@@ -184,18 +186,12 @@
   height: 20px;
   background: url("../img/eye-slash-regular.svg") 0 0 no-repeat;
 }
+
 .password-control.view {
   background: url("../img/eye-regular.svg") 0 0 no-repeat;
 }
 /* /hidden password */
 
-.getStarted-btn:hover,
-.getStarted-btn:focus {
-  background-color: var(--clr-primary);
-  cursor: pointer;
-  border-color: var(--clr-primary);
-  color: #ffffff;
-}
 /* /hero */
 
 /* socials */
@@ -218,16 +214,21 @@
 }
 
 .socials__headerNav {
+  max-width: 680px;
+  flex-grow: 1;
+}
+
+.socials__headerList {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 680px;
-  flex-grow: 1;
+  width: 100%;
 }
 
 .socials__headerNav i {
   font-size: 40px;
   color: #86878b;
+  opacity: 0.4;
   transition: 0.3s;
   padding: 8px;
 }
@@ -236,6 +237,7 @@
 .socials__headerNav i:focus {
   transform: scale(1.2);
   color: var(--clr-primary);
+  opacity: 1;
 }
 /* /socials */
 
@@ -247,6 +249,11 @@
     flex-direction: column;
   }
 
+  .header__nav,
+  .hero__form {
+    width: 80%;
+  }
+
   .hero {
     padding: 0 0 50px;
   }
@@ -255,16 +262,14 @@
   .socials__content {
     align-items: center;
   }
+
   .hero__subtitle:after {
     margin: 32px auto 0;
   }
+
   .hero__subtitle,
   .socials__text {
     text-align: center;
-  }
-  .header__nav,
-  .hero__form {
-    width: 80%;
   }
 
   .hero__form {
@@ -273,6 +278,16 @@
 
   .socials__headerNav {
     margin-top: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .header__nav,
+  .hero__form {
+    width: 100%;
+  }
+
+  .socials__headerNav i {
+    font-size: 30px;
   }
 }
 /* /adaptive */
