@@ -78,7 +78,7 @@
 /* adaptive */
 @media (max-width: 777px) {
   .customers {
-    padding: 50px 50px;
+    padding: 50px 0;
   }
 
   .testimonials {

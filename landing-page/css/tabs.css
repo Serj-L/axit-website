@@ -82,7 +82,7 @@
   }
 
   .tabs {
-    padding: 50px 50px;
+    padding: 50px 0;
   }
 
   .tabs__items {
@@ -124,6 +124,13 @@
 
   .tabs__img {
     margin: 30px 0 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .tabs__itemTitle {
+    width: 90px;
+    padding: 35px 0;
   }
 }
 /* /adaptive */

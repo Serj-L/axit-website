@@ -39,7 +39,6 @@
   height: 70px;
   border: 1px solid #d98943;
   border-radius: 50%;
-  cursor: pointer;
   transition-property: box-shadow, transform;
   transition-duration: 0.2s, 0.4s;
   transition-delay: 0s, 0.7s;
@@ -68,19 +67,22 @@
 /* adaptive */
 @media (max-width: 777px) {
   .awesome {
-    padding: 50px 50px;
+    padding: 50px 0;
   }
 
   .advantages {
     flex-direction: column;
+    margin-top: 45px;
   }
+
   .advantages,
   .advantages__item {
     margin-left: 0;
     margin-right: 0;
   }
+
   .advantages__item:not(:first-child) {
-    margin: 35px 0 0;
+    margin: 45px 0 0;
   }
 }
 /* /adaptive */

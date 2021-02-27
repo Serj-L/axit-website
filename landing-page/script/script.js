@@ -23,3 +23,11 @@ function show_hide_password_contact(target){
 	return false;
 }
 /* /show hidden password */
+
+/* burger menu Jquery */
+$(document).ready(function() {
+	$('.header__burgerBtn').click(function(event) {
+		$(".header__burgerBtn, .header__nav, .navigation").toggleClass("active")
+	});
+});
+/* /burger menu Jquery */
