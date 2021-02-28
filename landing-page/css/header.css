@@ -25,6 +25,7 @@
   text-transform: uppercase;
   margin-left: 10px;
 }
+
 .header__logo {
   transition: 0.3s;
 }
@@ -53,12 +54,32 @@
   line-height: 20px;
   color: rgba(255, 255, 255, 0.7);
   outline: none;
+  padding: 5px;
   transition: 0.3s;
+  position: relative;
 }
+.header__nav a::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: 2px;
+  left: 5px;
+  bottom: 2px;
+  background-color: var(--clr-primary);
+  transition: 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
 .header__nav a:hover,
 .header__nav a:focus {
   color: var(--clr-primary);
-  border-bottom: 1px solid var(--clr-primary);
+}
+
+.header__nav a:hover::after,
+.header__nav a:focus::after {
+  transform: scaleX(1);
+  transform-origin: right;
 }
 
 .nav-list :not(:first-child) {
