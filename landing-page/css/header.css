@@ -55,9 +55,10 @@
   color: rgba(255, 255, 255, 0.7);
   outline: none;
   padding: 5px;
-  transition: 0.3s;
+  transition: 0.2s ease;
   position: relative;
 }
+
 .header__nav a::after {
   content: "";
   position: absolute;
@@ -66,7 +67,7 @@
   left: 5px;
   bottom: 2px;
   background-color: var(--clr-primary);
-  transition: 0.3s;
+  transition: 0.2s ease;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -191,14 +192,38 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  transition: 0.2s;
+  transition: 0.2s ease-in;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.getStarted-btn::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  left: -1px;
+  right: 0;
+  top: -1px;
+  bottom: 0;
+  background-color: var(--clr-primary);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: 0.2s ease-in;
+}
+
+.getStarted-btn:hover::after,
+.getStarted-btn:hover::after,
+.getStarted-btn:focus::after,
+.getStarted-btn:focus::after {
+  transform: scaleY(1);
 }
 
 .getStarted-btn:hover,
 .getStarted-btn:focus {
-  background-color: var(--clr-primary);
-  cursor: pointer;
-  border-color: var(--clr-primary);
   color: #ffffff;
 }
 

@@ -36,7 +36,9 @@
 .contactForm-textarea-wrapper {
   margin-left: 40px;
 }
+
 textarea {
+  height: 185px;
   resize: none;
 }
 

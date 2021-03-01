@@ -76,6 +76,7 @@ h3 span {
 /* buttons & inputs*/
 .primary-btn {
   display: block;
+  position: relative;
   width: 135px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -87,10 +88,32 @@ h3 span {
   outline: none;
   transition: 0.3s;
   cursor: pointer;
+  z-index: 1;
+}
+
+.primary-btn::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  left: -1px;
+  right: 0;
+  top: -1px;
+  bottom: 0;
+  background-color: var(--clr-primary);
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.2s ease-in;
+}
+
+.primary-btn:hover::after,
+.primary-btn:focus::after {
+  transform: scale(1);
 }
 
 .secondary-btn {
   display: block;
+  position: relative;
   width: 135px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -101,17 +124,14 @@ h3 span {
   background-color: #666666;
   border: 1px solid #666666;
   outline: none;
-  transition: 0.3s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
-.primary-btn:hover,
-.primary-btn:focus,
 .secondary-btn:hover,
 .secondary-btn:focus {
   background-color: var(--clr-primary);
   border-color: var(--clr-primary);
-  border-radius: 2px;
   transform: scale(1.1);
 }
 
