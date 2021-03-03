@@ -1,5 +1,7 @@
 # FE08-onl-Lepnyakov-Sergei homeworks
 
+[Landing-page AXIT](https://Serj-L.github.io/FE08-wk-1-Lepnyakov-Sergei/landing-page/index.html)
+
 Task one is done and checked
 
 Task two (Landing page Section "Awesome") is done and checked (bugs fixed)
