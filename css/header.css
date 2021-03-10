@@ -345,6 +345,15 @@
     z-index: 4;
   }
 
+  .navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  }
+
+
   .navigation::after {
     content: "";
     position: absolute;
@@ -447,6 +456,10 @@
 
   .header__nav.active {
     right: 15px;
+  }
+
+  .hero {
+    padding-top: 82px;
   }
 }
 
