@@ -30,4 +30,9 @@ $(document).ready(function() {
 		$(".header__burgerBtn, .header__nav, .navigation").toggleClass("active")
 	});
 });
+$(document).ready(function() {
+	$('.nav-link').click(function(event) {
+		$(".header__burgerBtn, .header__nav, .navigation").removeClass("active")
+	});
+});
 /* /burger menu Jquery */
