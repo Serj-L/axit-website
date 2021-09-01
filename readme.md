@@ -1,6 +1,6 @@
 # FE08-onl-Lepnyakov-Sergei homeworks
 
-[Landing-page AXIT](https://Serj-L.github.io/FE08-wk-1-Lepnyakov-Sergei)
+[Landing-page AXIT](https://serj-l.github.io/axit-website)
 
 Task one is done and checked
 
